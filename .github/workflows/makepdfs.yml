@@ -13,6 +13,7 @@ jobs:
        with:
          markdown_dir: cheatsheets
          output_dir: tmp
+         media_dir: assets
      - uses: actions/upload-artifact@v4
        with:
          name: cheatsheets
