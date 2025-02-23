@@ -9,11 +9,11 @@ jobs:
      - uses: actions/checkout@v4
        with:
          repository: OWASP/CheatSheetSeries
-     - uses: mkrakowitzer/actions-makepdfs@master
+     - uses: baileyjm02/markdown-to-pdf@v1
        with:
-         markdown_dir: cheatsheets
+         input_path: cheatsheets
+         images_dir: assets
          output_dir: tmp
-         media_dir: assets
      - uses: actions/upload-artifact@v4
        with:
          name: cheatsheets
